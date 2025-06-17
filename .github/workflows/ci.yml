@@ -54,7 +54,7 @@ jobs:
           sleep 2
           curl -f http://localhost:8001/index.html
 
-  docker-build:                 # <-- Відступ 2 пробіли (рівень з backend-tests)
+  docker-build:                 # <-- В52ідступ 2 пробіли (рівень з backend-tests)
     runs-on: ubuntu-latest
     needs: [backend-tests, frontend-tests]  # <-- Відступ 4 пробіли, на рівні з runs-on
     permissions:

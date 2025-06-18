@@ -70,7 +70,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }} # Змініть тут на GITHUB_TOKEN
+          password: ${{ secrets.CR_PAT }}
       - name: Build & push image
         uses: docker/build-push-action@v5
         with:
